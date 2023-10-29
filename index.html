@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- css of intl-tel-input -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login Page 2 | HTML & CSS</title>
+  </head>
+  <body>
+    <!-- main box -->
+    <div class="main">
+      <div class="allelements">
+        <!-- logo -->
+        <div class="logo">
+          <img src="./logo.png" alt="logo" />
+        </div>
+        <div class="top">
+          <h1>Sign Up</h1>
+          <p>
+            Enter your details below to create your account and get started.
+          </p>
+        </div>
+        <!-- -----  form ----- -->
+        <!-- row 1 -->
+        <div class="row1">
+          <!-- name -->
+          <div class="full-name">
+            <h2>Full Name</h2>
+            <input type="text" placeholder="enter" />
+          </div>
+          <!-- email -->
+          <div class="email">
+            <h2>Email</h2>
+            <input type="email" name="" id="" placeholder="example@gmail.com" />
+          </div>
+        </div>
+        <!-- row 2 -->
+        <div class="row2">
+          <!-- date of birth -->
+          <div class="dob">
+            <h2>Date of Birth</h2>
+            <input type="date" name="" id="" placeholder="MM/DD/YY" />
+          </div>
+          <!-- phone number -->
+          <div class="phnumber">
+            <h2>Phone Number</h2>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="+91 987654321"
+              class="intl-tel-input"
+            />
+          </div>
+        </div>
+        <!-- row 3 -->
+        <div class="row3">
+          <!-- Nationality -->
+          <div class="nationality">
+            <label for="nationality"><h2>Nationality:</h2></label>
+            <select id="nationality" name="nationality">
+              <option value="india">India</option>
+              <option value="canada">Canada</option>
+              <option value="uk">UK</option>
+              <option value="australia">Australia</option>
+              <option value="japan">Japan</option>
+            </select>
+          </div>
+          <!-- id type -->
+          <div class="id-type">
+            <label for="id-type"><h2>ID Type</h2></label>
+            <select name="id-type" id="id-type">
+              <option value="Select">Select</option>
+              <option value="Aadhar-Card">Aadhar Card</option>
+              <option value="PAN Card">PAN Card</option>
+              <option value="Passport">Passport</option>
+              <option value="Birth Certificate">Birth Certificate</option>
+            </select>
+          </div>
+        </div>
+        <!-- row 4 -->
+        <div class="row4">
+          <!-- password -->
+          <div class="password">
+            <h2>Password</h2>
+            <input type="password" name="" id="" placeholder="enter ..." />
+          </div>
+          <!-- confirm-password -->
+          <div class="con-paswd">
+            <h2>Confirm Password</h2>
+            <input type="password" name="" id="" placeholder="enter ..." />
+          </div>
+        </div>
+        <br />
+        <!-- buttons -->
+        <div class="buttons">
+          <button id="btn1">Cancel</button>
+          <button id="btn2">Confirm</button>
+        </div>
+        <!-- end-text -->
+        <div class="end-text">
+          <p>Already have an account? <span>Login</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+  <script>
+    var input = document.querySelector("#phone");
+    var iti = window.intlTelInput(input, {
+      initialCountry: "in",
+      preferredCountries: ["in", "us", "gb", "ca", "au", "jp"],
+      utilsScript: "path/to/intl-tel-input/js/utils.js",
+    });
+  </script>
+</html>

@@ -1,0 +1,435 @@
+body {
+  /* background: black; */
+  background: linear-gradient(180deg, #1a1a1a 0%, #333333 100%);
+  color: white;
+}
+
+@font-face {
+  font-family: "glacial-indifference";
+  src: url(./font/GlacialIndifference-Regular.otf);
+}
+
+/* borders for visibility of divs */
+
+/* .main {
+  border: 2px solid red;
+}
+
+.allelements {
+  border: 2px solid gold;
+}
+
+
+.logo {
+  border: 2px solid greenyellow;
+}
+
+.top {
+  border: 2px solid rgb(32, 225, 205);
+}
+
+.full-name {
+  border: 2px solid pink;
+}
+
+.email {
+  border: 2px solid purple;
+}
+
+.dob {
+  border: 2px solid rgb(255, 68, 0);
+}
+
+.phnumber {
+  border: 2px solid rgb(252, 250, 252);
+}
+
+.nationality {
+  border: 2px solid rgb(216, 21, 90);
+}
+
+.id-type {
+  border: 2px solid rgb(101, 57, 166);
+}
+
+.password {
+  border: 2px solid teal;
+}
+
+.con-paswd {
+  border: 2px solid olive;
+}
+
+.buttons {
+  border: 2px solid aqua;
+}
+
+.end-text {
+  border: 2px solid gold;
+}
+
+.row1 {
+  border: 5px solid red;
+}
+.row2 {
+  border: 5px solid rgb(30, 255, 0);
+}
+.row3 {
+  border: 5px solid rgb(17, 0, 255);
+} */
+
+/* -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+.main {
+  margin: 20px 20% 20px 20%;
+  background: linear-gradient(90deg, #ff66c4, #ffde59);
+  border-radius: 20px;
+  padding: 15px 35px 35px 35px;
+}
+
+.allelements {
+  padding-top: 20px;
+}
+
+img {
+  height: 80px;
+  margin-bottom: -20px;
+}
+
+h1,
+h2,
+p,
+span,
+label {
+  color: black;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: -19px;
+  font-family: "League Spartan", sans-serif;
+}
+
+p {
+  font-size: 17px;
+  margin-bottom: 4px;
+  font-family: "glacial-indifference";
+}
+
+h2 {
+  margin-bottom: 1%;
+  font-size: 24px;
+  font-family: "glacial-indifference";
+  font: bold;
+}
+
+input {
+  font-family: "League Spartan", sans-serif;
+}
+
+/* --- */
+
+/* ROW 1 */
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.full-name {
+  width: 50%;
+}
+
+.full-name input {
+  font-size: 18px;
+  padding: 5px 0 5px 8px;
+  width: 90%;
+  border-radius: 7px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.email {
+  width: 50%;
+}
+
+.email input {
+  font-size: 18px;
+  padding: 5px 0 5px 8px;
+  width: 90%;
+  border-radius: 7px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* --- */
+
+/* ROW 2 */
+
+.row2 {
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dob {
+  width: 50%;
+}
+
+.dob input {
+  font-size: 18px;
+  padding: 5px 0 5px 8px;
+  width: 90%;
+  border-radius: 7px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.phnumber {
+  width: 50%;
+}
+
+.phnumber input {
+  font-size: 18px;
+  padding: 5px 0 5px 8px;
+  width: 118%;
+  border-radius: 7px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* --- */
+
+/* ROW 3 */
+
+.row3 {
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nationality {
+  width: 50%;
+}
+
+.id-type {
+  width: 50%;
+}
+
+select {
+  font-size: 18px;
+  padding: 5px 0 5px 8px;
+  width: 90%;
+  border-radius: 7px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* --- */
+
+/* ROW 3 */
+
+.row4 {
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.password {
+  width: 50%;
+}
+
+.password input {
+  font-size: 18px;
+  padding: 5px 0 5px 8px;
+  width: 90%;
+  border-radius: 7px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.con-paswd {
+  width: 50%;
+}
+
+.con-paswd input {
+  font-size: 18px;
+  padding: 5px 0 5px 8px;
+  width: 90%;
+  border-radius: 7px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* --- */
+
+/* BUTTONS */
+
+button {
+  height: 40px;
+  width: 37%;
+  font-size: 22px;
+  border-radius: 7px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  font-family: "glacial-indifference";
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#btn1 {
+  margin-left: 65px;
+  border: none;
+}
+
+#btn2 {
+  margin-right: 92px;
+  background: #0061a9;
+  border: none;
+}
+
+/* --- */
+
+/* end-text */
+.end-text {
+  display: flex;
+  justify-content: center;
+  margin-top: -6px;
+}
+
+span {
+  color: #0061a9;
+  cursor: pointer;
+}
+
+/* ---- */
+
+/* --- for responsivness  */
+
+/* Small screens (mobile) */
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .row1,
+  .row2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dob,
+  .phnumber {
+    width: 100%;
+  }
+
+  #nationality {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #btn1 {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  #btn2 {
+    margin-right: 0;
+  }
+
+  .end-text {
+    margin-top: 10px;
+  }
+}
+
+/* Medium screens (tablet) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .row1,
+  .row2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dob,
+  .phnumber {
+    width: 100%;
+  }
+
+  #nationality {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #btn1 {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  #btn2 {
+    margin-right: 0;
+  }
+
+  .end-text {
+    margin-top: 10px;
+  }
+}
+
+/* Large screens (desktop) */
+@media only screen and (min-width: 901px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .row1,
+  .row2 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .dob,
+  .phnumber {
+    width: 50%;
+  }
+
+  #nationality {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #btn1 {
+    margin-left: 65px;
+    margin-bottom: 0;
+  }
+
+  #btn2 {
+    margin-right: 92px;
+  }
+
+  .end-text {
+    margin-top: 0;
+  }
+}
